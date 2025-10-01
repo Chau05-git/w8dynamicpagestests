@@ -28,7 +28,7 @@ test.afterAll(async () => {
 test.describe('Createblog and BlogDetails Pages', () => {
   test('should allow the user to input blog data, save it, and display it on the homepage and blog details page', async ({ page }) => {
     // Step 1: Visit the Createblog page
-    await page.goto('http://10.0.2.15:3000/Createblog');
+    await page.goto('http://192.168.1.113:3000/createpost'); // Adjust the URL as needed
 
     // Wait for the page to settle and be ready for interaction
     await page.waitForLoadState('networkidle'); // Ensures all network requests are completed
